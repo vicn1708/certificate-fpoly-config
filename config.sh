@@ -1,10 +1,10 @@
 echo "Install Docker..."
 bash docker/install.sh
 
-list_domain=(
-    ("fpolycheckin.io.vn" "www.fpolycheckin.io.vn")
-    ("api.fpolycheckin.io.vn" "www.api.fpolycheckin.io.vn")
-)
+domain1=("fpolycheckin.io.vn" "www.fpolycheckin.io.vn")
+domain2=("api.fpolycheckin.io.vn" "www.api.fpolycheckin.io.vn")
+
+list_domain=($domain1 $domain2)
 
 echo "SSL fpolycheckin.io.vn"
 for domains in "${list_domain[@]}"; do
