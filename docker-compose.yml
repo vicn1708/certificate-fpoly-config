@@ -10,7 +10,7 @@ services:
     depends_on:
       - mongodb
     volumes:
-      - ./env/env.server:/app/.env
+      - ./env/.env.server:/app/.env
     networks:
       - certificate-network
 
