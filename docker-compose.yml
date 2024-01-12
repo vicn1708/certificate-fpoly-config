@@ -1,6 +1,17 @@
 version: "3.8"
 
 services:
+  certificate-client:
+    image: vicn1708/certificate-client-fpt
+    container_name: certificate-client
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./env/.env.client:/app/.env
+    networks:
+      - certificate-network
+
   certificate-server:
     image: vicn1708/certificate-server-fpt
     container_name: certificate-server
