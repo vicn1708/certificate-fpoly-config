@@ -1,5 +1,5 @@
-echo "Install Docker..."
-bash docker/install.sh
+#echo "Install Docker..."
+#bash docker/install.sh
 
 domain1=("fpolycheckin.io.vn" "www.fpolycheckin.io.vn")
 domain2=("api.fpolycheckin.io.vn" "www.api.fpolycheckin.io.vn")
